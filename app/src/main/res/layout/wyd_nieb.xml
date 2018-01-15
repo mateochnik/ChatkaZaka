@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/wydarz">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/brak_foto"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginBottom="62dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/grad_nieb"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="24"
+        android:id="@+id/textView2"
+        android:textSize="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Styczeń"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="-8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nazwa Wydarzenia"
+        android:id="@+id/textView4"
+        android:textSize="34dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/clock"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="środa, 24 Styczeń 2018, godz 15:00"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignStart="@+id/textView4" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView4"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/mark"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ACK Chatka Żaka"
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignStart="@+id/textView5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/line"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="tutaj tekst o wydarzeniu, tutaj tekst o wydarzeniu, tutaj tekst o wydarzeniu, tutaj tekst o wydarzeniu, tutaj tekst o wydarzeniu, tutaj tekst o wydarzeniu, tutaj tekst o wydarzeniu"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mateo.chatkazaka.MainActivity"
+    android:background="#9e464442">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wszystkie"
+        android:id="@+id/all"
+        android:layout_below="@+id/czarn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pomarańczowa linia"
+        android:id="@+id/orange"
+        android:layout_below="@+id/biala"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Niebieska Linia"
+        android:id="@+id/nieb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Czarna linia"
+        android:id="@+id/czarn"
+        android:layout_below="@+id/orange"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Żółta linia"
+        android:id="@+id/zolt"
+        android:layout_below="@+id/nieb"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biała linia"
+        android:id="@+id/biala"
+        android:layout_below="@+id/zolt"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
