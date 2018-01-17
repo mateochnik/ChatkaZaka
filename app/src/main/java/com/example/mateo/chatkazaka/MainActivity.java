@@ -7,11 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button b_orange;
-    private Button b_all;
+    private ImageButton b_all;
     private Button b_yellow;
     private Button b_nieb;
     public int kolor;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         b_orange = (Button)findViewById(R.id.orange);
-        b_all = (Button)findViewById(R.id.all);
+        b_all = (ImageButton)findViewById(R.id.all);
         b_yellow = (Button) findViewById(R.id.zolt) ;
         b_nieb = (Button) findViewById(R.id.nieb);
 
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 kolor = 1;
                 context = getApplicationContext();
-                Intent i = new Intent(context, wyda_pom.class);
+                Intent i = new Intent(context, Pomaran.class);
                 startActivity(i);
             }
         });

@@ -10,52 +10,58 @@
     tools:context="com.example.mateo.chatkazaka.MainActivity"
     android:background="#9e464442">
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wszystkie"
         android:id="@+id/all"
-        android:layout_below="@+id/czarn"
-        android:layout_alignParentStart="true" />
+        android:src="@drawable/logo_chatka"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Pomarańczowa linia"
         android:id="@+id/orange"
         android:layout_below="@+id/biala"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="#ff4823" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Niebieska Linia"
         android:id="@+id/nieb"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/all"
+        android:layout_alignParentStart="true"
+        android:background="#226ab2" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Czarna linia"
         android:id="@+id/czarn"
         android:layout_below="@+id/orange"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="#000000"
+        android:textColor="#ffffff" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Żółta linia"
         android:id="@+id/zolt"
         android:layout_below="@+id/nieb"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="#ffc533" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Biała linia"
         android:id="@+id/biala"
         android:layout_below="@+id/zolt"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="#ffffff" />
 </RelativeLayout>

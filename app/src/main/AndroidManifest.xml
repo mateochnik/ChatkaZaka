@@ -27,6 +27,9 @@
         <activity
             android:name=".wyda_nieb">
         </activity>
+        <activity
+            android:name=".Pomaran">
+        </activity>
     </application>
 
 </manifest>
