@@ -30,6 +30,9 @@
         <activity
             android:name=".Pomaran">
         </activity>
+    <activity
+        android:name=".Kalendarz">
+    </activity>
     </application>
 
 </manifest>

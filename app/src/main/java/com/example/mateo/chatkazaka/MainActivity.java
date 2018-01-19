@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton b_all;
     private Button b_yellow;
     private Button b_nieb;
+    private Button b_czarny;
+    private Button b_bialy;
     public int kolor;
     Context context;
 
@@ -26,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         b_all = (ImageButton)findViewById(R.id.all);
         b_yellow = (Button) findViewById(R.id.zolt) ;
         b_nieb = (Button) findViewById(R.id.nieb);
+        b_czarny = (Button) findViewById(R.id.czarn);
+        b_bialy = (Button) findViewById(R.id.biala);
 
         b_orange.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 kolor = 0;
                 context = getApplicationContext();
-                Intent ii = new Intent(context, wydarzenie.class);
+                Intent ii = new Intent(context, Kalendarz.class);
                 startActivity(ii);
             }
         });
@@ -60,6 +65,18 @@ public class MainActivity extends AppCompatActivity {
                 context = getApplicationContext();
                 Intent ii = new Intent(context, wyda_nieb.class);
                 startActivity(ii);
+            }
+        });
+        b_czarny.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Wkrótce dostępne (możliwa zmiana koloru)", Toast.LENGTH_LONG).show();
+            }
+        });
+        b_bialy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Wkrótce dostępne (możliwa zmiana koloru)", Toast.LENGTH_LONG).show();
             }
         });
 
