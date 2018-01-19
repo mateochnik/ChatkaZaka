@@ -21,7 +21,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pomarańczowa linia"
+        android:text="Pomarańczowa linia (z listą)"
         android:id="@+id/orange"
         android:layout_below="@+id/biala"
         android:layout_alignParentStart="true"
