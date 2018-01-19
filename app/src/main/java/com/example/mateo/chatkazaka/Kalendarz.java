@@ -31,6 +31,7 @@ public class Kalendarz extends AppCompatActivity {
                 intent.putExtra("miesiac", month);
                 intent.putExtra("dzien", dayofMonth);
                 startActivityForResult(intent, 1);
+
             }
         });
     }
