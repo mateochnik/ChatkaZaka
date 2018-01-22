@@ -48,6 +48,26 @@ public class ApiGoogle implements EasyPermissions.PermissionCallbacks {
         return mCredential;
     }
 
+    public void getAccountCallGoogleCalendarApi(ApiGoogleCalendarOperation operation, String... params) {
+        getAccountCallGoogleCalendarApi(false, operation, params);
+    }
+
+    public void getAccountCallGoogleCalendarApi(boolean askAboutAccountName, ApiGoogleCalendarOperation operation, String... params) {
+        if (! isGooglePlayServicesAvailable()) {
+            // no Google services
+            acquireGooglePlayServices();
+        } else if (mCredential.getSelectedAccountName() == null) {
+            // no Google account selected
+            chooseAccount(askAboutAccountName, operation);
+        } else if (! isDeviceOnline()) {
+            // device is offline
+            // print information in UI
+        } else {
+            // execute request class with credentials
+            new ApiGoogleCalendar(mContext, mActivity, this, mCredential, operation).execute(params);
+        }
+    }
+
     @Override
     public void onPermissionsGranted(int requestCode, List<String> perms) {
 
